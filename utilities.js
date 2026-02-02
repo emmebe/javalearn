@@ -1,5 +1,9 @@
- alert("im trying to learn java!");
-
- function clicker() {
+function clicker() {
      alert("clicked!");
  }
+
+const click = document.getElementById("buttonclick");
+
+click.addEventListener("click", (event) => {
+    clicker();
+});
