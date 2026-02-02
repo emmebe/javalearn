@@ -2,8 +2,10 @@ function clicker() {
      alert("clicked!");
  }
 
-const click = document.getElementById("buttonclick");
+ window.onload = function() {
+    const click = document.getElementById("buttonclick");
 
-click.addEventListener("click", (event) => {
-    clicker();
-});
+    click.addEventListener("click", (event) => {
+        clicker();
+    });
+ };
