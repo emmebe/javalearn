@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Java</title>
+    <script src="//unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <h1>I'm trying to learn Java</h1>
-    <button id="buttonclick">Click Here</button>
-
-    <script src="utilities.js"></script>
+    <div x-data="{name: ['emma', 'allie', 'cierra', 'audrey']}">
+        <button @click="alert(name[3])">alpine button</button>
+    </div>
 </body>
 </html>
